@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
   <script src="components/loader.js"></script>
   <script src="components/action.js"></script>
 
@@ -13,18 +14,72 @@
 </head>
 <body>
 
-  <!-- <div class="box">
-    <div class="col-xs-12">
-      <h1>Image Filter</h1>
-       <div class="filter">
-         <button>Camera</button>
-       </div>
-    </div> -->
+  <div class="box">
+    <h1>Image Filter</h1>
+     <div class="filter">
+        <button>Camera</button>
+     </div>
+
+   <div class="row">     
+     <p>Value: <span id="rangeValue"></span></p>
+     <input type="range" class="slider" value="50" min="0" max="100" id="myRange">
+   </div>
+
+   <br>
+
+   <div class="row">     
+     <p>Value: <span id="rangeValue1"></span></p>
+     <input type="range" class="slider1" value="50" min="0" max="100" id="myRange1">
+   </div>
+
+   <br>
+
+   <div class="row">     
+     <p>Value: <span id="rangeValue2"></span></p>
+     <input type="range" class="slider2" value="50" min="0" max="100" id="myRange2">
+   </div>
+
+   <br>
+
+   <div class="row">     
+     <p>Value: <span id="rangeValue3"></span></p>
+     <input type="range" class="slider3" value="50" min="0" max="100" id="myRange3">
+   </div>
+
   </div>
-  <div>     
-    <span id="rangeValue">0</span>
-    <input type="range" class="range" name="" value="0" min="0" max="100">
-  </div>
-   
+
+  <script type="text/javascript">
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("rangeValue");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
+    var slider1 = document.getElementById("myRange1");
+    var output1 = document.getElementById("rangeValue1");
+    output1.innerHTML = slider1.value;
+
+    slider1.oninput = function() {
+    output1.innerHTML = this.value;
+}
+
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("rangeValue2");
+    output2.innerHTML = slider2.value;
+
+    slider2.oninput = function() {
+    output2.innerHTML = this.value;
+}
+
+    var slider3 = document.getElementById("myRange3");
+    var output3 = document.getElementById("rangeValue3");
+    output3.innerHTML = slider3.value;
+
+    slider3.oninput = function() {
+    output3.innerHTML = this.value;
+}
+  </script>
 </body>
 </html>

@@ -1,7 +1,17 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+ function camera(){
+   navigator.camera.getPicture(onSucess, onFail,{
+   quality: 100,
+   destinationType: Camera.DestinationType.FILE_URI,
+   correctOrietation:true,
+   saveToPhotoAlbum:true
+   });
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+   function onSucess(imageURI){
+     var image = document.getElementById("image");
+     image.src = imageURI;
+   }
+
+   function onFail(message){
+     navigator.notification.alert("Failed because: " + message);
+   }
 }
