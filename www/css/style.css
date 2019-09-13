@@ -5,10 +5,10 @@ body{
 }
 
 img{
-  width: 200px;
+  width: 300px;
   height: 200px;
   background: black;
-  margin-left: 18vw;
+  margin-left: 3vw;
   margin-top: 3vh;
 }
 
@@ -87,7 +87,7 @@ h1{
 #rangeValue1{
   color: rgb(253, 253, 253);
   position: absolute;
-  top: 90vh;
+  top: 89.9vh;
   right: 20%;
   padding: 2px;
   width: 50px;
@@ -128,7 +128,7 @@ h1{
 #rangeValue2{
   color: rgb(253, 253, 253);
   position: absolute;
-  top: 181px;
+  top: 106.8vh;
   right: 20%;
   padding: 2px;
   width: 50px;
@@ -169,7 +169,7 @@ h1{
 #rangeValue3{
   color: rgb(253, 253, 253);
   position: absolute;
-  top: 218px;
+  top: 123.7vh;
   right: 20%;
   padding: 2px;
   width: 50px;
