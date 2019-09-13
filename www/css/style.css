@@ -30,6 +30,29 @@ h1{
   background: #00bcd4;
 }
 
+#rangeValue{
+  color: rgb(253, 253, 253);
+  position: absolute;
+  top: 103px;
+  right: 70px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  background: #222;
+  text-align: center;
+}
+
+#rangeValue::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #222;
+}
+
 .slider1{
   width: 200px;
   height: 2px;
@@ -46,6 +69,29 @@ h1{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+}
+
+#rangeValue1{
+  color: rgb(253, 253, 253);
+  position: absolute;
+  top: 139px;
+  right: 70px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  background: #222;
+  text-align: center;
+}
+
+#rangeValue1::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #222;
 }
 
 .slider2{
@@ -66,6 +112,29 @@ h1{
   background: #00bcd4;
 }
 
+#rangeValue2{
+  color: rgb(253, 253, 253);
+  position: absolute;
+  top: 175px;
+  right: 70px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  background: #222;
+  text-align: center;
+}
+
+#rangeValue2::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #222;
+}
+
 .slider3{
   width: 200px;
   height: 2px;
@@ -82,4 +151,27 @@ h1{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+}
+
+#rangeValue3{
+  color: rgb(253, 253, 253);
+  position: absolute;
+  top: 211px;
+  right: 70px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  background: #222;
+  text-align: center;
+}
+
+#rangeValue3::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #222;
 }
