@@ -2,10 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-
+ 
   <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/action.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
@@ -17,31 +16,36 @@
   <div class="box">
     <h1>Image Filter</h1>
      <div class="filter">
-        <button>Camera</button>
+        <button class="button" id="camera">Camera</button>
+        <img src="" alt="" id="image">
      </div>
 
-   <div class="row">     
+   <div class="row">
+     <p>Opacidade:</p>     
      <span id="rangeValue">0</span>
      <input type="range" class="slider" value="0" min="-100" max="100" id="myRange">
    </div>
 
    <br>
 
-   <div class="row">     
-    <span id="rangeValue1">0</span>
+   <div class="row">
+     <p>Saturação:</p>     
+     <span id="rangeValue1">0</span>
      <input type="range" class="slider1" value="0" min="-100" max="100" id="myRange1">
    </div>
 
    <br>
 
-   <div class="row">     
+   <div class="row">
+     <p>Escala de Cinza:</p>     
      <span id="rangeValue2">0</span>
      <input type="range" class="slider2" value="0" min="-100" max="100" id="myRange2">
    </div>
 
    <br>
 
-   <div class="row">     
+   <div class="row"> 
+     <p>Desfoque:</p>    
      <span id="rangeValue3">0</span>
      <input type="range" class="slider3" value="0" min="-100" max="100" id="myRange3">
    </div>
