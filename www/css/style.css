@@ -10,19 +10,33 @@ img{
   background: black;
   margin-left: 3vw;
   margin-top: 3vh;
+  transition: 0.5s;
 }
 
 p{
   margin-left: 5vw;
   font-size: 15px;
+  text-shadow: 5px 6px 10px rgba(0, 0, 0, 0.75),
+              -3px 6px 12px rgba(0, 0, 0, 0.75);
 }
 
-button{
-  margin-left: 40vw;
-}
-
-h1{
+.filter button{
+  margin-left: 39vw;
+  background: linear-gradient(250deg,rgb(0, 28, 117) 50%,rgb(0, 39, 163) 50%);
+  border: none;
+  width: 25%;
+  height: 4vh;
   text-align: center;
+  color: lightgray;
+  border-radius: 18px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.box h1{
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75),
+              -3px 10px 12px rgba(0, 0, 0, 0.75);
 }
 
 .slider{
@@ -33,6 +47,7 @@ h1{
   outline: none;
   border-radius: 2px;
   margin-left: 5vw;
+  cursor: pointer;
 }
 
 .slider::-webkit-slider-thumb{
