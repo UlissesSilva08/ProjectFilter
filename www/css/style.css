@@ -2,6 +2,9 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(180deg,grey 50%,white);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img{
@@ -11,9 +14,39 @@ img{
   margin-left: 3vw;
   margin-top: 3vh;
   transition: 0.5s;
+  position: relative;
+}
+
+img::before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: gray;
+  z-index: -1;
+}
+
+img::after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: gray;
+  z-index: -2;
+  filter: blur(20px);
+}
+
+img::before,
+img::after{
+  background: linear-gradient(235deg,#89ff00,white,#00bcd4);
 }
 
 p{
+  color: #d6d6d6;
   margin-left: 5vw;
   font-size: 15px;
   text-shadow: 5px 6px 10px rgba(0, 0, 0, 0.75),
@@ -33,10 +66,27 @@ p{
 }
 
 .box h1{
+  position: relative;
   text-align: center;
   font-size: 2em;
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75),
               -3px 10px 12px rgba(0, 0, 0, 0.75);
+}
+
+.box h1:before,
+.box h1:after {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background: #555;
+  position: absolute;
+  top: 50%;
+}
+.box h1:before {
+  left: 0;
+}
+.box h1:after {
+  right: 0;
 }
 
 .slider{
@@ -48,6 +98,7 @@ p{
   border-radius: 2px;
   margin-left: 5vw;
   cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .slider::-webkit-slider-thumb{
@@ -56,6 +107,7 @@ p{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue{
@@ -68,6 +120,7 @@ p{
   box-sizing: border-box;
   background: #222;
   text-align: center;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue::before{
@@ -89,6 +142,7 @@ p{
   outline: none;
   border-radius: 2px;
   margin-left: 5vw;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .slider1::-webkit-slider-thumb{
@@ -97,6 +151,7 @@ p{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue1{
@@ -109,6 +164,7 @@ p{
   box-sizing: border-box;
   background: #222;
   text-align: center;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue1::before{
@@ -130,6 +186,7 @@ p{
   outline: none;
   border-radius: 2px;
   margin-left: 5vw;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .slider2::-webkit-slider-thumb{
@@ -138,6 +195,7 @@ p{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue2{
@@ -150,6 +208,7 @@ p{
   box-sizing: border-box;
   background: #222;
   text-align: center;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue2::before{
@@ -171,6 +230,7 @@ p{
   outline: none;
   border-radius: 2px;
   margin-left: 5vw;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .slider3::-webkit-slider-thumb{
@@ -179,6 +239,7 @@ p{
   height: 20px;
   border-radius: 50%;
   background: #00bcd4;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue3{
@@ -191,6 +252,7 @@ p{
   box-sizing: border-box;
   background: #222;
   text-align: center;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 #rangeValue3::before{
